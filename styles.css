@@ -212,7 +212,7 @@ iframe {
 }
 
 .daynight{
-    position: relative;
+    position: absolute;
     top: 20px;
     left: 10px;
     box-shadow: #6ab970;
