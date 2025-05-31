@@ -197,7 +197,7 @@ function showDriveFolder6() {
 function submitMovie() {
     let movieName = document.getElementById("movie-name").value.trim();
     if (movieName) {
-        let mailtoLink = `mailto:rafsan.ocson1@gmail.com?subject=Movie Request&body=I want to watch: ${movieName}`;
+        let mailtoLink = `mailto:deboneel1998@gmail.com?subject=Movie Request&body=I want to watch: ${movieName}`;
         window.location.href = mailtoLink;
         alert("Your request has been sent!");
     } else {
