@@ -36,10 +36,16 @@
             <button onclick="showContent('AET')">Agricultural Engineering & Technology</button>
         </nav>
 
-    <div class="daynight">
-          <button id="day" onclick="bckgroundImaged('day')">Day</button>
-          <button id="night" onclick="bckgroundImagen('night')">Night</button>
+    <div class="daynight-switch">
+      <button id="day" onclick="bckgroundImaged('day')">
+        <i class="fas fa-sun"></i>
+      </button>
+      <button id="night" onclick="bckgroundImagen('night')">
+        <i class="fas fa-moon"></i>
+      </button>
     </div>
+
+    
 
         <div id="content">Choose an option above to explore!</div>
         <button onclick="logout()">Logout</button>

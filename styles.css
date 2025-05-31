@@ -224,7 +224,7 @@ iframe {
 #movie_description{
     color:rgb(255, 255, 255);
     font-size: 20px;
-
+    
     text-align: left ;
 }
 
@@ -523,10 +523,53 @@ footer {
 
 
 
+/* Position top-right and responsive */
+.daynight-switch {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  gap: 10px;
+  z-index: 1000;
+}
 
+/* Common button style */
+.daynight-switch button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+/* Day style */
+#day {
+  background: #ffe97f;
+  color: #f59e0b;
+}
 
+/* Night style */
+#night {
+  background: #2c3e50;
+  color: #ecf0f1;
+}
 
+/* Hover animation */
+.daynight-switch button:hover {
+  transform: scale(1.1) rotate(10deg);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
 
-
-
+/* Responsive: shrink on small screens */
+@media (max-width: 600px) {
+  .daynight-switch button {
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+  }
+}

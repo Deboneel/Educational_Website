@@ -275,3 +275,5 @@ window.addEventListener('resize', () => {
   corners[2].left = window.innerWidth - 140;
   corners[3].top = window.innerHeight - 140;
 });
+
+
